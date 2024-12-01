@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        /* width: 100vw; */
+        min-width: 1600px;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+      }
+
+      .header-design {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #1f2937;
+      }
+      .header-content {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+      }
+      .header-logo {
+        color: #f9faf8;
+        font-size: 24px;
+        width: 700px;
+      }
+      .header-links {
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header-links-div {
+        color: #e5e7eb;
+        font-size: 18px;
+        font-weight: 100;
+        text-decoration-line: none;
+      }
+      .header-links-div:hover {
+        color: #aaaaaa;
+        text-decoration-line: underline;
+      }
+      .hero-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1f2937;
+        height: 500px;
+      }
+      .hero-content {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-text {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 600px;
+        align-items: flex-start;
+      }
+      .hero-image {
+        background-color: #6d747d;
+        height: 100%;
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .hero-text-h2 {
+        font-size: 48px;
+        color: #f9faf8;
+        font-weight: 900;
+      }
+      .hero-text-p {
+        color: #e5e7eb;
+        font-size: 18px;
+        font-weight: lighter;
+        margin-top: -25px;
+      }
+      .hero-text-button {
+        background-color: #3882f6;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        padding: 8px 30px 8px 30px;
+      }
+      .random-info-section {
+        display: flex;
+        padding: 20px 0 20px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .random-info-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 1200px;
+      }
+      .random-info-content-h2 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 900;
+        color: #1f2937;
+      }
+      .random-info-content-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+      .random-info-content-square {
+        border: #3882f6 solid 3px;
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+      }
+      .random-info-content-text {
+        width: 100%;
+        text-align: center;
+      }
+      .random-info-content-grid {
+        width: 70%;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 80px;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 50px;
+      }
+      .random-info-content-grid > div {
+        color: #1f2937;
+      }
+      .quote-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #e5e7e5;
+        height: 300px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .quote-content {
+        display: flex;
+        flex-direction: column;
+        width: 1200px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .quote-section-quote {
+        width: 70%;
+        font-size: 36px;
+        font-weight: 100;
+        font-style: italic;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .quote-section-p {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      .footer-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        height: 350px;
+      }
+      .footer-content {
+        color: white;
+        padding: 40px 80px 40px 80px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        background-color: #3882f6;
+      }
+      .footer-content-text {
+        width: 70%;
+        line-height: 5px;
+      }
+      .footer-content-text-header {
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      .footer-content-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30%;
+      }
+      .footer-content-link {
+        border-radius: 10px;
+        border: white solid 2px;
+        padding: 8px 40px 8px 40px;
+      }
+      .footer-design {
+        height: 100px;
+        background-color: #1f2937;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-design">
+      <div class="header-content">
+        <h1 class="header-logo">Header logo</h1>
+        <div class="header-links">
+          <a href="#" class="header-links-div">header link one</a>
+          <a href="#" class="header-links-div">header link two</a>
+          <a href="#" class="header-links-div">header link three</a>
+        </div>
+      </div>
+    </header>
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="hero-text-h2">
+            This website is <br />
+            awesome
+          </h2>
+          <p class="hero-text-p">
+            This website has some subtext that goes under the <br />
+            main title. it's a smaller font and the color is lower contrast.
+          </p>
+          <button type="button" class="hero-text-button">Sign up</button>
+        </div>
+        <div class="hero-image">this is a placeholder for an image</div>
+      </div>
+    </div>
+
+    <div class="random-info-section">
+      <div class="random-info-content">
+        <h2 class="random-info-content-h2">Some random information</h2>
+        <div class="random-info-content-grid">
+          <div class="random-info-content-container">
+            <div class="random-info-content-square"></div>
+            <p class="random-info-content-text">
+              this is some subtext under an illustration or image
+            </p>
+          </div>
+          <div class="random-info-content-container">
+            <div class="random-info-content-square"></div>
+            <p class="random-info-content-text">
+              this is some subtext under an illustration or image
+            </p>
+          </div>
+          <div class="random-info-content-container">
+            <div class="random-info-content-square"></div>
+            <p class="random-info-content-text">
+              this is some subtext under an illustration or image
+            </p>
+          </div>
+          <div class="random-info-content-container">
+            <div class="random-info-content-square"></div>
+            <p class="random-info-content-text">
+              this is some subtext under an illustration or image
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quote-section">
+      <div class="quote-content">
+        <div class="quote-section-quote">
+          This is an inspiring quote, or a testimonial from a customer. Maybe
+          it's just filling space or maybe people will actually read it. Who
+          knows? All I know is that it looks nice.
+        </div>
+        <div class="quote-section-p">
+          <p>-Thor, God of Thunder</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="footer-content">
+        <div class="footer-content-text">
+          <p class="footer-content-text-header">Call to action! It's time!</p>
+          <p>
+            Sign up for our product by clicking that button right over there
+          </p>
+        </div>
+        <div class="footer-content-button">
+          <button type="button" class="footer-content-link">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer-design">Copyright © The Odin Project 2024</footer>
+</html>
